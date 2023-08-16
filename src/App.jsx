@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Nav from './components/Nav';
 
 const App = () => {
-  return (
-    <div>hello</div>
-  )
-}
+    return (
+        <>
+            <div className='App'>
+                <Nav />
+            </div>
+        </>
+    );
+};
 
-export default App
+export default App;
+
