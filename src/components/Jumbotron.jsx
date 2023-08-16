@@ -1,4 +1,11 @@
 const Jumbotron = () => {
+    const handleLearnMore = () => {
+        const element = document.querySelector('.sound-section');
+        window.scrollTo({
+            top: element?.getBoundingClientRect().top,
+            behavior: 'smooth',
+        });
+    };
     return (
         <div className='jumbotron-section wrapper'>
             <h2 className='title'>New</h2>
@@ -12,9 +19,9 @@ const Jumbotron = () => {
                     <button className='button'>Buy</button>
                 </li>
                 <li>
-                    <a href='' className='link'>
+                    <span href='' className='link' onClick={handleLearnMore}>
                         Learn more
-                    </a>
+                    </span>
                 </li>
             </ul>
             <img src='./images/iphone-hand.png' alt='' className='iphone-img' />
